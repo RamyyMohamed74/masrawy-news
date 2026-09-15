@@ -166,9 +166,11 @@ h1 span, h2 span {
 }
 
 .photo-frame img {
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
     display: block;
+    margin: auto;
 }
 
 .photo-glow {
