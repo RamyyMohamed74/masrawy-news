@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090812" />
+  <meta name="description" content="You're invited to celebrate Ezzoo's birthday!" />
+  <title>Ezzoo's Birthday 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+  <main>
+    <section class="welcome" id="welcome">
+      <div class="floating-balloon b1">🎈</div>
+      <div class="floating-balloon b2">🎈</div>
+      <div class="gift">🎁</div>
+      <p class="eyebrow">A little surprise for you...</p>
+      <h1>You're<br><span>Invited!</span></h1>
+      <p class="intro">Someone very special is celebrating, and it wouldn't be the same without you.</p>
+      <button class="open-btn" id="openBtn">Open the Invitation <span>✦</span></button>
+      <p class="tiny">Tap to reveal the surprise</p>
+    </section>
+
+    <section class="invitation hidden" id="invitation">
+      <div class="topbar">
+        <span>✦ EZZOO'S SPECIAL DAY ✦</span>
+        <button class="music-btn" id="musicBtn" aria-label="Turn music on or off">🔇</button>
+      </div>
+
+      <div class="hero">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <img src="assets/ezzoo.jpg" alt="Ezzoo as a child" />
+          <div class="photo-tag">THE BIRTHDAY BOY ✨</div>
+        </div>
+
+        <p class="eyebrow">Save the date</p>
+        <h2>It's <span>Ezzoo's</span><br>Birthday!</h2>
+        <p class="hero-text">One night. Good food. Great people.<br>And a whole lot of memories.</p>
+      </div>
+
+      <div class="details">
+        <div class="detail-card">
+          <div class="detail-icon">📅</div>
+          <div><small>DATE</small><strong>15 September 2026</strong></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⏰</div>
+          <div><small>TIME</small><strong>7:00 PM</strong></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">📍</div>
+          <div><small>PLACE</small><strong>Fuddruckers — Maadi</strong></div>
+        </div>
+      </div>
+
+      <div class="countdown-section">
+        <p class="eyebrow">The celebration starts in</p>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p class="party-message" id="partyMessage"></p>
+      </div>
+
+      <div class="message">
+        <span class="quote-mark">“</span>
+        <p>Come hungry, come ready to laugh, and most importantly...</p>
+        <h3>COME CELEBRATE! 🎉</h3>
+        <span class="quote-mark right">”</span>
+      </div>
+
+      <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Fuddruckers+Maadi+Cairo" target="_blank" rel="noopener">
+        📍 Open Location in Maps
+      </a>
+
+      <footer>
+        <p>Made with ❤️ for Ezzoo</p>
+        <p class="footer-small">See you there! ✨</p>
+      </footer>
+    </section>
+  </main>
+
+  <audio id="birthdayMusic" loop preload="auto">
+    <source src="assets/birthday-music.wav" type="audio/wav">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
